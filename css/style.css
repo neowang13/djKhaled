@@ -1,0 +1,418 @@
+
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        color:black;
+    }
+    body{
+        background-color: white ;
+    }
+    .header{
+        position:fixed;
+        width:100%;
+        top:0px;
+    }
+    .logo img{
+        position:relative;
+        width:13%;
+    }
+
+    .dropbtn {
+        display: inline-block;
+        position: fixed;
+        top:0;
+        left:13%;
+        background-color: black;
+        color: white;
+        padding: 32px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }   
+
+    .desktop_dropdown {
+        position: relative;
+        top:120px;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #242424
+    }
+
+    .desktop_dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .desktop_dropdown:hover .dropbtn {
+        background-color: #242424;
+    }
+
+
+    .section form{
+        text-align: center;
+    }
+
+    .section{
+        position: absolute;
+        top: 180px;
+        left: 50px;
+        width: 600px;
+        text-align:center; 
+    }
+
+    .contact{
+        color:white;
+    }
+    .index_pics{
+        position: relative;
+        top:1500px;
+    }
+    .index_pics div{
+        display: inline-block;
+        width: 24%;
+        height: 300px;
+        position: relative;
+    }
+    .index_pics div img{
+        width: 100%;
+        height: 300px;
+        transition: opacity 0.5s;
+    }
+    .index_pics div h4{
+        position: absolute;
+        font-size: 25px;
+
+        width:100%;
+        top:50%;
+        margin:0;
+        transform: translateY(-50%);
+
+        text-align: center;
+        transition: background-color 1s, color 1s;
+        opacity: 0;
+        color:white;
+    }
+
+    .index_pics div:hover h4{
+        background-color: rgba(0,0,0,0.9);
+        opacity: 1;
+    }
+    .index_pics div:hover img{
+        opacity: 0.5;
+    }
+
+
+    .float{
+        left :90%;
+        top: 700px;
+        position: fixed;
+    }
+    .float img{
+        position:relative;
+        top:0px;
+        width: 100%;
+        height: 100%;
+        opacity :0.8;
+        transition: opacity 0.5s;
+    }
+    .float h4{
+        display: inline-block;
+        position: absolute;
+        font-size: 25px;
+
+        width:100%;
+        top:48%;
+        margin:0;
+        transform: translateY(-50%);
+        padding: 52px 0px;
+        text-align: center;
+        transition: background-color 1s, color 1s;
+        opacity: 0;
+        color:white;
+    }
+    .float a:active{
+        padding: 61px 0px 61px 0px;
+    }
+    .float:hover h4{
+        background-color: rgba(0,0,0,0.9);
+        opacity: 1;
+    }
+    .float:hover img{
+        opacity: 0.3;
+    }
+
+    .float a:link {
+        color: white;
+        text-decoration: none;
+
+
+    }
+    .float a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    img{
+        border-radius: 1%;
+    }
+
+    .footer{
+        position:relative;
+        top:950px;
+        width:100%;
+        text-align: center;
+        color:white;
+        background-color: black
+    }
+    .footer a{
+        text-decoration: none;
+        border-bottom: 1px solid #0d2c40;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+        transition: background-color 1s, color 1s;
+    }
+    
+    .footer a:hover {
+        color: red;
+        border-bottom: 1px solid rgba(50, 150, 50, 0.4);
+        }
+    .desktop_dropdown{
+        padding:10px 10px 20px;
+        width:100%;
+        margin-top: 20px;
+        margin-bottom:40px;
+        position: absolute;
+        top: 40px;
+    }
+    .hamburger div{
+        width: 30px;
+        height:5px;
+        margin-top:5px;
+        background-color: #FF381B;
+    }
+    .mobile{
+        top:0px;
+        width:100%;
+        display:none;
+        padding:10px;
+        background-color: white;
+    }
+
+    table tr th{
+        text-align: center;
+    }
+    table tr th, table tr td{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .gametable{
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    .contact_form{
+        position:relative;
+        top:500px;
+    }
+
+    @media(max-width: 888px){
+        .index_pics div{
+            width: 49%;
+        }
+        .index_pics{
+            top: 800px;
+        }
+        .section{
+        position: absolute;
+        top: 180px;
+        left: 50px;
+        width: 400px;
+        text-align:center;
+        }
+    }
+    @media(max-width: 737px){
+        .index_pics div{
+            width: 100%;
+        }
+        .desktop_dropdown{
+            display:none;
+        }
+        .mobile{
+            display: block;
+        }
+
+    }
+    @media(max-width: 1190px){
+        nav li a{
+            padding: 15px 35px 15px 35px;
+        }
+    }
+
+.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+    
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+    
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+    .fullscreen-bg {
+        background: url('http://www.ew.com/sites/default/files/styles/tout_image_612x380/public/i/%5Bcurrent-date%3Acustom%3AY%5D/%5Bcurrent-date%3Acustom%3Am%5D/%5Bcurrent-date%3Acustom%3Ad%5D/dj-khaled.jpg?itok=7jEVtFBI') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+
+    .bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+
+
+
+/*    nav{
+        position:relative;
+        top:50%;
+        left:13%;
+    }
+    nav a:visited, nav a:link { 
+        color: white;
+        text-decoration: none;
+    }
+    nav li{
+        display: inline-block;
+        font-size:20px;
+        width:24%;
+        text-align: center;
+        font-family: 'Righteous', cursive;
+    }
+    nav li a{
+        text-decoration: none;
+        border: 3px solid black;
+        padding: 15px 95px 15px 95px;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.8);
+        transition: background-color 2s, color 2s;
+    }
+    nav li a:hover{
+        background-color: rgba(255,255,255,1);
+        color:black;
+    }*/
+
+
+.nav a:link,.nav a:visited {
+        text-decoration: none;
+        color: white;
+}
+.nav{
+    background-color: black;
+}
+
+.nav>li {
+    top:0px;
+    display: inline-block;
+    color: white;
+    font-size: 23px;
+    font-family: 'Khand', sans-serif; font-weight: 500;
+}
+
+.dropdown-menu>li{
+    font-size: 18px;
+}
+
+.nav img{
+    height:63px;
+}
+.nav li a{
+    padding:0;
+    margin-left: 15px;
+    margin-right:15px;
+}
+
+
+
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: rgba(50,50,50,0.9);
+}
+
+.nav-tabs .dropdown-menu, .nav .dropdown-menu, .navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+.nav .active:hover{
+    background-color:black;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}

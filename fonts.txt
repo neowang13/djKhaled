@@ -1,0 +1,23 @@
+<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Khand:600,500|Ranga:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker|Righteous' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash|Khand:600,500|Ranga:400,700|Pacifico|Permanent+Marker|Righteous|Rock+Salt' rel='stylesheet' type='text/css'>
+
+Berkshire Swash
+Khand
+Ranga
+Pacifico
+Permanent Marker
+Righteous
+RockSalt
+
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Khand', sans-serif;
+font-family: 'Ranga', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'RockSalt', cursive;
+
+
+h1 { font-family: 'Metrophobic', Arial, serif; font-weight: 400; }
